@@ -1,0 +1,19 @@
+﻿@model IEnumerable<MyWeb1._0.Models.User>
+
+@{
+    ViewData["Title"] = "InfoUser";
+}
+
+<h1>Информация о новых пользователях</h1>
+<table class="table">
+     <tr><th>Имя</th><th>Фамилия</th><th>Возраст</th><th>Почта</th></tr>
+    @foreach (var item in Model)
+    {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Surname</td>
+                    <td>@item.Age</td>
+                    <td>@item.Email</td>
+                </tr>
+    }
+</table>

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Foldit:wght@100&family=Roboto+Slab:wght@700&family=Yellowtail&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+#display {
+    background: #f8f1f1;
+    color: black;
+    font-size: 25px;
+    font-family: 'Yellowtail', cursive;
+    height: 200px;
+    border: groove;
+    border-color: black;
+}
+
+#title {
+    background-image: url('https://sun6-21.userapi.com/s/v1/ig2/RKogQJBNuSAQsVsTDT9g-VGDu34k7039lvn4sQjoQpiL5dJ6QfAyj_qPfp94ggtpAoLJWmrKZ2VnYd-3uRRgzOKY.jpg?size=885x885&quality=96&crop=55,56,885,885&ava=1');
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    font-size: 45px;
+    font-family: 'Yellowtail', cursive;
+    float: left;
+}
+
+#menu {
+    font-size: 30px;
+    font-family: 'Yellowtail', cursive;
+}
+
+#nav {
+    list-style: none;
+    display: block;
+    float: right;
+    width: 70%;
+    margin-left: 25%;
+    text-align: right;
+    margin-bottom: 50px;
+    margin-top: -100px;
+    margin-right: 50px;
+    
+}
+
+#nav li {
+    display: inline;
+    font-family: 'Yellowtail', cursive;
+    background: #30dec5;
+    border: 50px solid silver;
+    padding: 0 50px;
+    cursor: pointer;
+    border: groove;
+    border-color: black;
+}
+
+#nav li:not(:last-of-type){
+    margin-right:35px;
+}
+
+#nav li:hover {
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+}
+
+#display {
+    background: #f8f1f1;
+    color: black;
+    font-size: 25px;
+    font-family: 'Foldit', sans-serif;
+    height: 200px;
+    border: groove;
+    border-color: black;
+}
+
+#display-2 {
+    background: #30dec5;
+    height: 700px;
+    border: groove;
+    border-color: black;
+}
+
+#display-3 {
+    background: #f8f1f1;
+    font-family: 'Yellowtail', cursive;
+    font-size: 10px;
+    border: groove;
+    border-color: black;
+    height: 200px;
+}
+
+
+#display-4 {
+    background: #f8f1f1;
+    font-family: 'Yellowtail', cursive;
+    font-size: 10px;
+    border: groove;
+    border-color: black;
+    height: 200px;
+}
+
+#display-5 {
+    background: #30dec5;
+    height: 700px;
+    border: groove;
+    border-color: black;
+    font-size: 30px;
+}
+#title-2 {
+    font-size: 50px;
+    text-align:center
+}
+
+input {
+    background-color: lightblue;
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#button-1 {
+    background-color: #04AA6D;
+    border: groove;
+    border-color: black;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 25px;
+    width:400px;
+    height:60px
+}
+
+#button-1:hover {
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+ }
+
+#display-6 {
+        background: #f8f1f1;
+        font-family: 'Yellowtail', cursive;
+        font-size: 10px;
+        border: groove;
+        border-color: black;
+        height: 200px;
+    }
