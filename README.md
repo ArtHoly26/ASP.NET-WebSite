@@ -1,5 +1,5 @@
 # ASP.NET-WebSite
-Создан проект на платформе ASP.NET core MVC.
+Создан проект на платформе ASP.NET core MVC.\t
 Написана главная страиница со вкладками.(html,css)
 Подключение к БД (MsSQL) осуществляется с помощью Entity Framework.
 Разработан класс User.
