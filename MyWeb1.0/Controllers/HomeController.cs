@@ -11,19 +11,29 @@ namespace MyWeb1._0.Controllers
         {
             db = context;
         }
-
-        [HttpPost]
-        public async Task<IActionResult> Create(User user)
-        {
-            db.Users.Add(user);
-            await db.SaveChangesAsync();
-            return RedirectToAction("Index");
-        }
-
         public IActionResult Index()
         {
             return View();
         }
+       
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id != null)
+            {
+                User? user = await db.Users.FirstOrDefaultAsync(p => p.Id == id);
+                if (user != null) return View(user);
+            }
+            return NotFound();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(User user)
+        {
+            db.Users.Update(user);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
     }
 
 }

@@ -3,28 +3,27 @@ using MyWeb1._0.Models;
 
 namespace MyWeb1._0.Controllers
 {
-    public class RegisterController : Controller
+    public class AddController : Controller
     {
         ApplicationContext db;
 
-        public RegisterController(ApplicationContext context)
+        public AddController(ApplicationContext context)
         {
             db = context;
         }
         public IActionResult Index() => View();
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser(User user)
+        public async Task<IActionResult> CreateGame(Game game)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                db.Users.Add(user);
+                db.Games.Add(game);
                 await db.SaveChangesAsync();
                 return Redirect("/");
             }
 
             return View("Index");
         }
-
     }
 }

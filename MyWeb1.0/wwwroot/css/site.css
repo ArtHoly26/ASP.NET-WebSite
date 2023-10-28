@@ -153,3 +153,8 @@ input {
         border-color: black;
         height: 200px;
     }
+
+#validation{
+    font-size:23px;
+    color:red;
+}

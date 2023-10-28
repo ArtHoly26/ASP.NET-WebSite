@@ -1,0 +1,34 @@
+﻿@model IEnumerable<MyWeb1._0.Models.Game>
+@{
+    ViewData["Title"] = "GameShop";
+}
+
+<header id="display">
+    <div id="title">Welcome to Game Online Shop!</div>
+</header>
+
+<main id="display-2">
+     <h1>Игры в магазине</h1>
+     <div id="category"> 
+     <table class="table">
+     <tr><th>Название игры </th><th>Жанр</th><th>Описание</th><th>Цена</th><th>Изображение</th></tr>
+            @foreach (var item in Model)
+            {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Genre</td>
+                        <td>@item.Description</td>
+                        <td>@item.Price</td>
+                        <td>@item.Img</td>
+                    </tr>
+            }
+     </table>
+     </div>
+</main>
+
+<footer id="display-3">
+     <h1 id="dis-3">Copyright © gameshop.com, 2023. Все права защищены.<br/>
+                    Контакты для связи: o.zelenskii@mail.ru
+     </h1>
+</footer>
+

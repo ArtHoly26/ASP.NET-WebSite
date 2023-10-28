@@ -3,33 +3,31 @@
     ViewData["Title"] = "Registration";
 }
 
-
 <header id="display-4">
     <h1 id="title-2">Регистрация нового пользователя</h1>
 </header>
 
-
 <main id="display-5">
-<form asp-action="create"  asp-controller="home" asp-action="Check">
+    <form asp-action="CreateUser" asp-controller="Register"  method="post"> 
+    <span id="validation" asp-validation-for="Name"></span><br/>
     <label id="name-1" asp-for="Name"></label>
     <input id="name-2" asp-for="Name"/>
-    <span asp-validation-for="Name"></span><br/>
     <br/>
+    <span id="validation" asp-validation-for="Surname"></span><br/>
     <label id="surname-1" asp-for="Surname"></label>
     <input id="surname-2" asp-for="Surname"/>
-    <span asp-validation-for="Surname"></span><br/>
     <br/>
+    <span id="validation" asp-validation-for="Age"></span><br/>
     <label id="age-1" asp-for="Age"></label>
     <input id="age-2" asp-for="Age"/>
-    <span asp-validation-for="Age"></span><br/>
     <br/>
+    <span id="validation" asp-validation-for="Email"></span><br/>
     <label id="email-1"asp-for="Email"></label>
     <input id="email-2"asp-for="Email"/>
-    <span asp-validation-for="Email"></span><br/>
     <br/>
-    <input id="button-1" type="submit" value="Отправить"/>
     
-</form>
+    <input id="button-1" type="submit" value="Отправить"/> 
+    </form>
 </main>
 
 <footer id="display-6">

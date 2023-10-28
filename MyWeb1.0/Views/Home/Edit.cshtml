@@ -1,0 +1,31 @@
+﻿@model MyWeb1._0.Models.User
+@{
+    ViewData["Title"] = "Redact user";
+}
+
+<h1>Редактирование пользователя</h1>
+
+<main>
+    <form asp-action="Edit" asp-controller="Home" asp-route-id="@Model.Id">
+    <p>
+        <label asp-for="Name">Имя</label><br />
+        <input type="text" asp-for="Name" />
+    </p>
+    <p>
+        <label asp-for="Surname">Фамилия</label><br />
+        <input type="text" asp-for="Surname" />
+    </p>
+    <p>
+        <label asp-for="Age">Возраст</label><br />
+        <input type="number" asp-for="Age" />
+    </p>
+    <p>
+        <label asp-for="Email">Почта</label><br />
+        <input type="text" asp-for="Email" />
+    </p>
+    <p>
+        <input type="submit" value="Сохранить" />
+    </p>
+    </form>
+</main>
+

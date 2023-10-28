@@ -1,0 +1,35 @@
+﻿@model MyWeb1._0.Models.Game
+@{
+    ViewData["Title"] = "AddGames";
+}
+
+<header id="display-4">
+    <h1 id="title-2">Добавление новой игры в магазин</h1>
+</header>
+
+<main id="display-5">
+    <form asp-action="CreateGame" asp-controller="Add"  method="post"> 
+    <label id="nameGame" asp-for="Name"></label>
+    <input id="nameGame" asp-for="Name"/>
+    <br/>
+    <label id="surname-1" asp-for="Genre"></label>
+    <input id="surname-2" asp-for="Genre"/>
+    <br/>
+    <label id="age-1" asp-for="Description"></label>
+    <input id="age-2" asp-for="Description"/>
+    <br/>
+    <label id="email-1"asp-for="Price"></label>
+    <input id="email-2"asp-for="Price"/>
+    <br/>
+    <label id="email-1"asp-for="Img"></label>
+    <input id="email-2"asp-for="Img"/>
+    <br/>
+
+    <input id="button-1" type="submit" value="Добавить"/> 
+    </form>
+</main>
+
+<footer id="display-6">
+
+</footer>
+
