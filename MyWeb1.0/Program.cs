@@ -1,7 +1,16 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using MyWeb1._0.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddAuthentication("Cookies");
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options => options.LoginPath = "/login");
+builder.Services.AddAuthorization();
+
+
 
 string connection = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -12,6 +21,9 @@ builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServe
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 
 if (!app.Environment.IsDevelopment())

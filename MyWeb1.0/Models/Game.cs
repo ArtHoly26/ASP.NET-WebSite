@@ -22,20 +22,5 @@ namespace MyWeb1._0.Models
 
         public string? Img { get { return img; } set { img = value; } }
 
-
-        //public Strategy(int id, string? name, string? description, int price)
-        //{
-        //    Id = id;
-        //    Name = name;
-        //    Description = description;
-        //    Price = price;
-        //    Genre = "Стратегия";
-        //}
-
-        public void ShowInfo()
-        {
-            Console.WriteLine($"Номер {Id} Название игры {Id} Жанр {Id} Описание {Id} Цена {Id} Изображение");
-        }
-
     }
 }
